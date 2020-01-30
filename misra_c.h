@@ -190,7 +190,7 @@ void      GM_MISRAC_2012_R18_6(void);
 void GM_MISRA_2012_R18_7(void);
 
 #ifndef _MSC_VER
-void GM_MISRA_2012_R18_8(int16_t n, uint16_t a[10][n]);
+void GM_MISRA_2012_R18_8(int16_t n, uint16_t a[10][0]);
 #endif
 
 /* Rule set 19 */
