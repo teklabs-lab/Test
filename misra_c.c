@@ -1245,7 +1245,7 @@ uint16_t GM_MISRAC_2012_R17_4(int16_t input)
 {
     if ( input < 0 )
     {
-        return; /*Non-compliant because there is no explicit return value */
+        return 0; /*Non-compliant because there is no explicit return value */
     }
     return (uint16_t) input;
 }
