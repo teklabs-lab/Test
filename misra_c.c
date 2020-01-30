@@ -1381,7 +1381,7 @@ void GM_MISRAC_2012_R18_6(void)
 #ifndef _MSC_VER
 void GM_MISRA_2012_R18_8(int16_t n, uint16_t a[10][n])  /* Non-compliant */
 {
-    n = 0;
+    n = -1;
     uint16_t vla [n];               /* Non-compliant - Undefined if n <=0 */
 }
 #endif
