@@ -1379,9 +1379,9 @@ void GM_MISRAC_2012_R18_6(void)
 /* Rule 18.8    Variable-length array types shall not be used  */
 /***************************************************************/
 #ifndef _MSC_VER
-void GM_MISRA_2012_R18_8(int16_t n, uint16_t a[10][n])  /* Non-compliant */
+void GM_MISRA_2012_R18_8(int16_t n, uint16_t a[10][0])  /* Non-compliant */
 {
-    n = -1;
+    n = 0;
     uint16_t vla [n];               /* Non-compliant - Undefined if n <=0 */
 }
 #endif
